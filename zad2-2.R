@@ -21,3 +21,4 @@ ile_jeszcze_to_bd_trwac <- as.difftime(koniec - today, units=c("hours"))
 
 ile_godzinek <-  ile_jeszcze_to_bd_trwac * 24 + (ile_lat_kiblowania * 365 * 24)
 ile_godzinek
+
