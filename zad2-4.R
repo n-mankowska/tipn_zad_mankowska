@@ -6,7 +6,6 @@ while(lata <= 2018) {
 }  
 
 
-
 #co robić? - nie działa :(
 
   lata <-  2018
