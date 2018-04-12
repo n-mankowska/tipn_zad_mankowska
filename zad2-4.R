@@ -7,7 +7,7 @@ while(lata <= 2018) {
 
 
 
-#co robiæ? - nie dzia³a :(
+#co robiÄ‡? - nie dziaÅ‚a :(
 
   lata <-  2018
 while(lata => 1800) {
@@ -16,7 +16,7 @@ while(lata => 1800) {
   lata <-  lata - 1
 }
   
-#a tu? tak nie mo¿na? :(  
+#a tu? tak nie moÅ¼na? :(  
   
   lata <-  2018
   while(lata => 1800) {
