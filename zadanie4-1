@@ -21,8 +21,10 @@
 * (displ) engine displacement, in litres - pojemność silnika w litrach
 * (year) year of manufacture - rok produkcji
 * (cyl) number of cylinders - liczba cylindrów 
-* (trans) type of transmission - rodzaj spalania czy coś
-* (drv) f = front-wheel drive, r = rear wheel drive, 4 = 4wd
+* (trans) type of transmission - rodzaj spalania 
+* (drv) f = front-wheel drive - napęd przedni
+        r = rear wheel drive - napęd tylni
+        4 = 4wd - napęd na 4 koła
 * (cty) city miles per gallon - spalanie w mieście (galon/mila)
 * (hwy) highway miles per gallon - spalanie na autostradzie (galon/mila)
 * (fl) fuel type - rodzaj paliwa
