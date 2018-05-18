@@ -1,0 +1,29 @@
+# Mpg jest zbiorem danych nt. 38  popularnych modeli samochodów produkowanych od 1999 do 2008 oraz nt. zużycia przez nie paliwa. 
+
+
+# Ilość zmiennych: 11
+
+
+# Ilość obserwacji w zbiorze: 234
+
+
+# engine displacement (displ) to pojemność silnika podana w litrach
+
+
+# miles per gallon mówi ile można mil przejechać na jednym galonie, a galon to miara objętości w UK (~4,55) i US (~3,79)
+
+
+#W zbiorze pojawia się rozróżnienie na to ile na autostradzie, a ile w mieście - highway miles per gallon (hwy) / city miles per gallon (cty)
+
+
+#
+* (model) model name - nazwa modelu samochodu 
+* (displ) engine displacement, in litres - pojemność silnika w litrach
+* (year) year of manufacture - rok produkcji
+* (cyl) number of cylinders - liczba cylindrów 
+* (trans) type of transmission - rodzaj spalania czy coś
+* (drv) f = front-wheel drive, r = rear wheel drive, 4 = 4wd
+* (cty) city miles per gallon - spalanie w mieście (galon/mila)
+* (hwy) highway miles per gallon - spalanie na autostradzie (galon/mila)
+* (fl) fuel type - rodzaj paliwa
+* (class) "type" of car - rodzaj samochodu
