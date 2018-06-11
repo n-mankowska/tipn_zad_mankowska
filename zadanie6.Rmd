@@ -1,0 +1,121 @@
+---
+title: "zadanie6"
+author: "Natalia Mańkowska"
+output: 
+  html_document:
+    theme: default
+    df_print: paged
+---
+
+# Wpływ społeczny
+
+****
+
+Jest to proces, w wyniku którego dochodzi do zmiany **zachowania**, **opinii** lub **uczuć** człowieka wskutek tego, co **robią**, **myślą** lub **czują** inni ludzie.
+
+###Wpływ społeczny charakteryzuje się tym, że:
+
+1. nie musi być intencjonalny,
+2. jest integralną częścią życia społecznego,
+3. nie musi być uświadomiony przez osobę, na której się go wywiera.
+
+### Trzy najczęstsze przypadki wpływu:
+
++ **naśladownictwo**
+    + efekt Wertera
+    + ziewanie
+    + teoria społecznego uczenia się (Bandura)
++ **konformizm**
+    + wpływ normatywny i informacyjny
+    + konformizm zewnętrzny i wewnętrzny
+    + badania Ascha
++ **uleganie autorytetom**
+    + czynniki zwiększające siłę autorytetu:
+        + mundur
+        + tytuł - prof., dr, ks., itp.
+        + efekt *amerykańskich naukowców*
+    + badania Milgrama
+
+
+### Mechanizmy wywierania wpływu społecznego:
+
+|NAZWA MECHANIZMU|     CHARAKTERYSTYKA               |     PRZYKŁAD         |
+|----------------|-----------------------------------|----------------------|
+| **zaangażowanie** | podjęcie jakiegoś działania (a nawet samo przygotowanie się do niego) inicjuje szereg procesów sprawiających, że działanie wykonujemy (albo kontynuujemy) pomimo **poważnych** kosztów, na jakie nas naraża | eksperyment z *przygodą kulinarną* aka jedzenie robaków |
+| **pragnienie słuszności** | *jeżeli inni tak postępują, to tak **musi** być* | masakra w Jonestown |
+| **lubienie** | jak kogoś lubimy, to łatwiej mu nas do czegoś (np. zakupu telefonu) przekonać | reklamy ze znanymi i lubianymi aktorami/piosenkarzami |
+| **reguła wzajemności** | *jeżeli ty zrobiłeś coś dla mnie, to ja muszę ci się odwdzięczyć* | darmowe próbki od firm tj. Douglas |
+| **niedostępność dóbr** | dobra niedostępne są fajne, bo to oznacza, że: są tylko dla VIP-ów/są pożądane przez innych, co świadczy o ich wartości | *Nie czekaj! To ostatnie chwile promocji! Zostało ci 6 godzin, żeby zostać szczęśliwym posiadaczem tego superhiperfajnego odkurzacza!* |
+
+
+[A oto filmik, w którym reguły wywierania wpływu są krótko omówione.]( https://www.youtube.com/watch?v=3-T-dr9oB2w )
+
+
+#### Poruszając temat wpływu społecznego,  grzechem byłoby nie wspomnieć o guru w tej kwestii - Robercie Cialdinim i jego technikach manipulacji. Oto niektóre z nich:
+
++ stopa w drzwiach
++ niska piłka
++ drzwiami w twarz
+
+
+`Czy istnieje na świecie ktoś, kto nie pomyślał, że te nazwy są dziwne?`
+
+![**Oto najpopularniejsza książka R. Cialdiniego**](cialdini.JPG)
+
+
+Inspired by: *prezentacja z psychologii społecznej*, 2017, Basiński K.
+
+
+****
+
+
+`A teraz nadszedł czas na spełnienie kolejnych wymaganych podpunktów, bo zaliczenie z TIPN to ważna sprawa.`
+
+#### Oto wykres przedstawiający liczbę samochodów wybranych modeli produkowanych w latach 1999 - 2008:
+
+```{r tabela, echo=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(tidyverse)
+
+ggplot (data = mpg) +
+  geom_bar(mapping = aes(x = class, fill = class)) +
+  labs(title = "Rodzaje samochodów", x = "rodzaj samochodu")
+```
+
+
+
+****
+
+#### W poniższej tabeli ukazane są ceny diamentów (w $), zależne m. in. od liczby karatów w tych kamieniach.
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+data(diamonds)
+select(diamonds, carat, price)
+
+```
+
+****
+
+#### Oto tabela, która zawiera filmy (a dokładniej dramaty) powstałe po roku 1997 włącznie.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE, paged.print=TRUE}
+library (tidyverse)
+library(readr)
+movies <- read_csv("movies.csv")
+
+dramaty <- filter(movies, Drama == 1, year >= 1997)
+
+arrange(dramaty, desc(length))
+
+```
+
+```{r include=FALSE}
+# A to jest kod, którego nie będzie widać
+
+ggplot(data = mpg, aes(x = class, y = displ, fill = class)) +
+  geom_boxplot() +
+  coord_flip() +
+  labs(title = "Zależność pojemności silnika od klasy samochodu", x = "klasa samochodu", y = "pojemność silnika")
+```
+
+### Dziękuję za uwagę, swoją przygodę z R Markdown uważam za (chyba) niezakończoną - może kiedyś zacznę robić tu notatki, bo serio wyglądają ładnie.
