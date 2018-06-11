@@ -4,4 +4,4 @@
 
 Przykładowo, tutaj znajduje się zadanie 6, którego celem było stworzenie spójnego i sensownego dokumentu (mam nadzieję, że się udało).
 
-[Oto on]( https://github.com/n-mankowska/tipn_zad_mankowska/blob/master/zadanie06.html )
+[Oto on]( https://n-mankowska.github.io/tipn_zad_mankowska/zadanie06.html )
