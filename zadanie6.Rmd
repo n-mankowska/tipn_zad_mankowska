@@ -13,7 +13,7 @@ output:
 
 Jest to proces, w wyniku którego dochodzi do zmiany **zachowania**, **opinii** lub **uczuć** człowieka wskutek tego, co **robią**, **myślą** lub **czują** inni ludzie.
 
-###Wpływ społeczny charakteryzuje się tym, że:
+### Wpływ społeczny charakteryzuje się tym, że:
 
 1. nie musi być intencjonalny,
 2. jest integralną częścią życia społecznego,
